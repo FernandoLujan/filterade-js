@@ -16,7 +16,7 @@ Here's one way you could call Filterade on your content:
 
 ```js
 $('#content').Filterade({
-  useFilters:     'true',
+  useFilters:     true,
   filterControls: '#filter-controls',
   pageLimit:      10
 });
