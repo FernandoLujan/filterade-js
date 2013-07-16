@@ -43,9 +43,9 @@ To filter through content, first you need to place the controls in a container. 
 <fieldset id="filter-controls">
   <input type="radio" name="filters" id="all">
   <label for="all">All</label>
-  <input type="radio" name="filters" id="all">
+  <input type="radio" name="filters" id="coffee">
   <label for="all">Coffee</label>
-  <input type="radio" name="filters" id="all">
+  <input type="radio" name="filters" id="tea">
   <label for="all">Tea</label>
 </fieldset>
 ```
