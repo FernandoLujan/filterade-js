@@ -64,11 +64,11 @@ To categorize content, use the :
 ### Options
 
 ##### useFilters
-'''
+```
 default: false
 
 Whether or not to use category filters
-'''
+```
 
 ##### filterControls       
 default: '#filter-controls'
