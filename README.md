@@ -1,9 +1,6 @@
 # Filterade.js
 
-Filtering and pagination with options, from Canada
-
-### Demo
-Get familiar with the <a href="http://esselsolutions.ca/filteradejs/" target="_blank">demo</a>
+Filtering and pagination with options, from Canada. Check out <a href="http://esselsolutions.ca/filteradejs/" target="_blank">the demo</a>
 
 ## How to Use
 
