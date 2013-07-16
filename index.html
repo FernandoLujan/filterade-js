@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Filterade.js</title>
+
+    <link type="text/css" rel="stylesheet" href="stylesheets/theme.css">
+  </head>
+  <body>
+    <header>
+      <h1>Filterade.js</h1>
+      <p>Basic filters and pagination for static content.</p>
+    </header>
+
+    <h3>Example</h3>
+
+    <form id="filters">
+      <header><h5>Filter by genre:</h5></header>
+      <fieldset>
+        <input type="radio" name="filter" id="all" checked="checked">
+        <label for="all">All</label>
+        <input type="radio" name="filter" id="action">
+        <label for="action">Action</label>
+        <input type="radio" name="filter" id="adventure">
+        <label for="adventure">Adventure</label>
+        <input type="radio" name="filter" id="comedy">
+        <label for="comedy">Comedy</label>
+        <input type="radio" name="filter" id="drama">
+        <label for="drama">Drama</label>
+        <input type="radio" name="filter" id="thriller">
+        <label for="thriller">Thriller</label>
+        <input type="radio" name="filter" id="sci-fi">
+        <label for="sci-fi">Sci-Fi</label>
+      </fieldset>
+    </form>
+
+    <nav class="page-navigation">
+      <ul id="page-controls"></ul>
+    </nav>
+
+    <section id="content">
+      <article class="item" data-filter="comedy">
+        <header>
+          <h4>Dumb &amp; Dumber</h4>
+          <h5>Genre: Comedy</h5>
+        </header>
+
+        <p class="description">Directed by Peter Farrelly. With Jim Carrey, Jeff Daniels, Lauren Holly, Mike Starr. The cross-country adventures of two good-hearted but incredibly stupid ...</p>
+      </article>
+
+      <article class="item" data-filter="drama">
+        <header>
+          <h4>The Drama</h4>
+          <h5>Genre: Drama</h5>
+        </header>
+
+        <p class="description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers ...</p>
+      </article>
+
+      <article class="item" data-filter="drama">
+        <header>
+          <h4>Lots of Drama</h4>
+          <h5>Genre: Drama</h5>
+        </header>
+
+        <p class="description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers ...</p>
+      </article>
+
+      <article class="item" data-filter="drama">
+        <header>
+          <h4>Dramatic-er</h4>
+          <h5>Genre: Drama</h5>
+        </header>
+
+        <p class="description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers ...</p>
+      </article>
+
+      <article class="item" data-filter="drama">
+        <header>
+          <h4>Dramatic</h4>
+          <h5>Genre: Drama</h5>
+        </header>
+
+        <p class="description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers ...</p>
+      </article>
+
+      <article class="item" data-filter="adventure">
+        <header>
+          <h4>The Lord of the Rings: The Two Towers</h4>
+          <h5>Genre: Adventure</h5>
+        </header>
+
+        <p class="description">While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes ...</p>
+      </article>
+
+      <article class="item" data-filter="sci-fi">
+        <header>
+          <h4>Star Wars: Episode V - The Empire Strikes Back</h4>
+          <h5>Genre: Sci-Fi</h5>
+        </header>
+
+        <p class="description">After the rebels have been brutally overpowered by the Empire on their newly-established base, Luke Skywalker takes advanced Jedi training with Yoda ...</p>
+      </article>
+
+      <article class="item" data-filter="sci-fi">
+        <header>
+          <h4>Star Wars: Episode IV - A New Hope</h4>
+          <h5>Genre: Sci-Fi</h5>
+        </header>
+
+        <p class="description">After the rebels have been brutally overpowered by the Empire on their newly-established base, Luke Skywalker takes advanced Jedi training with Yoda ...</p>
+      </article>
+
+      <article class="item" data-filter="sci-fi">
+        <header>
+          <h4>Back to the Future</h4>
+          <h5>Genre: Sci-Fi</h5>
+        </header>
+
+        <p class="description">A teenager is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his friend, Dr. Emmett Brown, and must make sure ...</p>
+      </article>
+
+      <article class="item" data-filter="thriller">
+        <header>
+          <h4>Rear Window</h4>
+          <h5>Genre: Thriller</h5>
+        </header>
+
+        <p class="description">A wheelchair bound photographer spies on his neighbours from his apartment window and becomes convinced one of them has committed murder ...</p>
+      </article>
+
+      <article class="item" data-filter="thriller">
+        <header>
+          <h4>Reservoir Dogs</h4>
+          <h5>Genre: Thriller</h5>
+        </header>
+
+        <p class="description">After a simple jewelery heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant ...</p>
+      </article>
+
+      <article class="item" data-filter="comedy">
+        <header>
+          <h4>Monty Python and the Holy Grail</h4>
+          <h5>Genre: Comedy</h5>
+        </header>
+
+        <p class="description">King Arthur and his knights embark on a low-budget search for the Grail, encountering many very silly obstacles ...</p>
+      </article>
+
+      <article class="item" data-filter="sci-fi">
+        <header>
+          <h4>2001: A Space Odyssey</h4>
+          <h5>Genre: Sci-Fi</h5>
+        </header>
+
+        <p class="description">Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000 ...</p>
+      </article>
+
+      <article class="item" data-filter="comedy">
+        <header>
+          <h4>The Simpsons</h4>
+          <h5>Genre: Comedy</h5>
+        </header>
+
+        <p class="description">This description was made up on the fly. It's not like the others ...</p>
+      </article>
+    </section><!-- #content -->
+
+    <script type="text/javascript" src="vendor/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="jquery.filterade.min.js"></script>
+
+    <script>
+      $('#content').Filterade({
+        // Pagination
+        pageLimit:      3,
+
+        // Filters
+        useFilters:     true, 
+        filterControls: '#filters',
+        defaultFilter:  'all',
+
+        // Dev helpers
+        log:            true 
+      });
+    </script>
+  </body>
+</html>

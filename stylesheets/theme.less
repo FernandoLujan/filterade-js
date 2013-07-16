@@ -1,0 +1,124 @@
+@import "elements.less";
+
+html {
+  background-color: #1C1C1F;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 15px 45px;
+  margin: 0;
+  font: 16px Helvetica, Arial;
+  color: #333;
+  background-color: #ECECEC;
+  text-shadow: 1px 1px 0 #FFF;
+  border: 30px solid #FFF;
+  .drop-shadow(0, 10px, 40px, 0.75);
+}
+
+h1 {
+  width: 100%;
+  color: #2CA258;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #CACACA;
+  font-size: 36px;
+}
+
+h3 {
+  margin-bottom: 8px;
+}
+
+h4, h5 {
+  margin: 0; padding: 0;
+}
+
+#filters {
+  margin-bottom: 15px;
+
+  header h5 {
+    padding-left: 5px;
+    margin-bottom: 7px;
+  }
+
+  fieldset {
+    padding: 8px 15px;
+    margin: 0;
+    border: 1px solid #CACACA;
+    background-color: #FFFFFF;
+    .rounded(3px);
+    .drop-shadow(0, 1px, 2px, 0.15);
+  }
+}
+
+.page-navigation {
+  #page-controls {
+    margin: 0; padding: 0;
+    list-style: none;
+    width: 100%;
+    clear: both;
+    display: block;
+    height: 50px;
+
+    li {
+      float: left;
+      display: block;
+
+      a {
+        display: block;
+        padding: 8px 12px;
+        margin-right: 5px;
+        background-color: #FFF;
+        border: 1px solid #CACACA;
+        text-decoration: none;
+        color: #333;
+        .rounded(3px);
+        .drop-shadow(0, 1px, 2px, 0.15);
+        .transition-duration(0.4s);
+
+        &:hover {
+          background: #2CA258;
+          .box-shadow(inset 0 1px 1px lighten(#2CA258,15%));
+          color: #FFF;
+          text-shadow: 1px 1px 0 darken(#2CA258,10%);
+          border: 1px solid darken(#2CA258,10%);
+        }
+      }
+
+      a.active {
+        .opacity(0.5);
+        &:hover {
+          .box-shadow(none);
+          text-shadow: none;
+          background-color: #FFF;
+          border: 1px solid #CACACA;
+          color: #333;
+        }
+      }
+    }// li
+  }// #page-controls
+}// .page-navigation
+
+.page-navigation #page-controls:empty {
+  height: 0;
+}
+
+#content {
+  article {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #CACACA;
+
+    header {
+      h4 { font-weight: bold; }
+      h5 { font-weight: normal; }
+    }
+    
+    p {
+      color: #444;
+      font-size: 14px;
+      margin: 15px 0 0 0;
+      padding: 0;
+    }
+  }
+}
