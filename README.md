@@ -11,19 +11,31 @@ Just include jQuery and Filterade into your page:
 <script type="text/javascript" src="scripts/jquery.filterade.min.js"></script>
 ```
 
+
 Here's one way you could call Filterade on your content:
 
 ```js
-<script>
 $('#content').Filterade({
   filterControls: '#filter-controls',
   useFilters:     'true',
   pageLimit:      10
 });
-</script>
 ```
 
+
 Minimum configuration doesn't require any parameters. Pagination works out of the box, but filters are disabled by default. Check the documentation below to read on options and defaults.
+
+
+#### Pagination
+
+If pagination is enabled, you'll want to make an empty list where you want your page controls:
+
+```html
+<ul id="filter-controls"></ul>
+```
+
+
+#### Filters
 
 To filter through content, first you need to place the controls in a container. Make sure to set the id of the input to be the name of the filter you'd like it to control:
 
@@ -38,12 +50,6 @@ To filter through content, first you need to place the controls in a container. 
 </fieldset>
 ```
 
-If pagination is enabled, you'll want to make an empty list where you want your page controls:
-
-```html
-<ul id="filter-controls"></ul>
-```
-
 To categorize content, use the :
 
 ```html
@@ -54,28 +60,28 @@ To categorize content, use the :
 </ul>
 ```
 
+
 ### Options
 
-
-#### useFilters
 ```
+##### useFilters
 default: false
 ```
 Whether or not to use category filters
 
-#### filterControls       
 ```
+##### filterControls       
 default: '#filter-controls'
 ```
 The container including all your filter <input>'s
 
-#### defaultFilter:        
 ```
+##### defaultFilter:        
 default: none
 ```
 The id of the filter that should be focused on pageload
 
-#### selectAll
+##### selectAll
 ```
 default: 'all'
 ```
