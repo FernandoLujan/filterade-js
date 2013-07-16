@@ -69,7 +69,7 @@ Whether or not to use category filters
 default: false
 ```
 ##### filterControls       
-The container including all your filter <input>'s
+The container including all your filter &lt;input&gt;s
 ```
 default: '#filter-controls'
 ```
