@@ -31,7 +31,7 @@ Minimum configuration doesn't require any parameters. Pagination works out of th
 If pagination is enabled, you'll want to make an empty list where you want your page controls:
 
 ```html
-<ul id="filter-controls"></ul>
+<ul id="page-controls"></ul>
 ```
 
 
@@ -64,85 +64,72 @@ To categorize content, use the :
 ### Options
 
 ##### useFilters
-```
 default: false
-```
+
 Whether or not to use category filters
 
 ##### filterControls       
-```
 default: '#filter-controls'
-```
+
 The container including all your filter <input>'s
 
 ##### defaultFilter:        
-```
 default: none
-```
+
 The id of the filter that should be focused on pageload
 
 ##### selectAll
-```
 default: 'all'
-```
+
 The id of the filter that shows all content
 
 ##### usePagination
-```
 default: true
-```
+
 Whether or not to paginate the content
 
 ##### pageLimit:
-```
 default: 15
-```
+
 The amount of items to show per page
 
 ##### pageControls
-```
 default: '#page-controls'
-```
+
 The container for the page controls (i.e., the 'previous', 'next' &amp; numbered controls)
 
 ##### previousButtonClass
-```
 default: 'previous'
-```
+
 ...
 
-```
-previousButtonLabel
+
+##### previousButtonLabel
 default: 'Previous'
-```
+
 ...
 
-```
-nextButtonClass
+##### nextButtonClass
 default: 'next'
-```
+
 ...
 
-```
-nextButtonLabel
+##### nextButtonLabel
 default: 'Next'
-```
+
 ...
 
-```
-pagerClass
+##### pagerClass
 default: 'page'
-```
+
 ...
 
-```
-activeClass
+##### activeClass
 default: 'active' 
-```
+
 ...
 
-```
-log
+##### log
 default: false
-```
+
 ...
