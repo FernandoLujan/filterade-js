@@ -64,47 +64,43 @@ To categorize content, use the :
 ### Options
 
 ##### useFilters
-```
-default: false
-
 Whether or not to use category filters
 ```
-
+default: false
+```
 ##### filterControls       
-default: '#filter-controls'
-
 The container including all your filter <input>'s
-
+```
+default: '#filter-controls'
+```
 ##### defaultFilter:        
-default: none
-
 The id of the filter that should be focused on pageload
-
+```
+default: none
+```
 ##### selectAll
-default: 'all'
-
 The id of the filter that shows all content
-
+```
+default: 'all'
+```
 ##### usePagination
-default: true
-
 Whether or not to paginate the content
-
+```
+default: true
+```
 ##### pageLimit:
-default: 15
-
 The amount of items to show per page
-
+```
+default: 15
+```
 ##### pageControls
-default: '#page-controls'
-
 The container for the page controls (i.e., the 'previous', 'next' &amp; numbered controls)
-
+```
+default: '#page-controls'
+```
 ##### previousButtonClass
 default: 'previous'
-
 ...
-
 
 ##### previousButtonLabel
 default: 'Previous'
