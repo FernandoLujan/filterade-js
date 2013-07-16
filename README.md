@@ -2,8 +2,8 @@
 
 Filtering and pagination with options, from Canada
 
-## Demo
-<a href="http://esselsolutions.ca/filteradejs/">Filterade in action</a>
+### Demo
+Get familiar with the <a href="http://esselsolutions.ca/filteradejs/" target="_blank">demo</a>
 
 ## How to Use
 
