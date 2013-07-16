@@ -2,6 +2,9 @@
 
 Filtering and pagination with options, from Canada
 
+## Demo
+<a href="http://esselsolutions.ca/filteradejs/">Filterade in action</a>
+
 ## How to Use
 
 Just include jQuery and Filterade into your page:
