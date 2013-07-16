@@ -7,20 +7,20 @@ Filtering and pagination with options, from Canada
 Just include jQuery and Filterade into your page:
 
 ```html
-&lt;script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="scripts/jquery.filterade.min.js"&gt;&lt;/script&gt;
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.filterade.min.js"></script>
 ```
 
 Here's one way you could call Filterade on your content:
 
 ```js
-&lt;script&gt;
+<script>
 $('#content').Filterade({
   filterControls: '#filter-controls',
   useFilters:     'true',
   pageLimit:      10
 });
-&lt;/script&gt;
+</script>
 ```
 
 Minimum configuration doesn't require any parameters. Pagination works out of the box, but filters are disabled by default. Check the documentation below to read on options and defaults.
@@ -28,78 +28,79 @@ Minimum configuration doesn't require any parameters. Pagination works out of th
 To filter through content, first you need to place the controls in a container. Make sure to set the id of the input to be the name of the filter you'd like it to control:
 
 ```html
-&lt;fieldset id="filter-controls"&gt;
-  &lt;input type="radio" name="filters" id="all"&gt;
-  &lt;label for="all"&gt;All&lt;/label&gt;
-  &lt;input type="radio" name="filters" id="all"&gt;
-  &lt;label for="all"&gt;Coffee&lt;/label&gt;
-  &lt;input type="radio" name="filters" id="all"&gt;
-  &lt;label for="all"&gt;Tea&lt;/label&gt;
-&lt;/fieldset&gt;
+<fieldset id="filter-controls">
+  <input type="radio" name="filters" id="all">
+  <label for="all">All</label>
+  <input type="radio" name="filters" id="all">
+  <label for="all">Coffee</label>
+  <input type="radio" name="filters" id="all">
+  <label for="all">Tea</label>
+</fieldset>
 ```
 
 If pagination is enabled, you'll want to make an empty list where you want your page controls:
 
 ```html
-&lt;ul id="filter-controls"&gt;&lt;/ul&gt;
+<ul id="filter-controls"></ul>
 ```
 
 To categorize content, use the :
 
 ```html
-&lt;ul id="content"&gt;
-  &lt;li data-filter="coffee"&gt;Beans&lt;/li&gt;
-  &lt;li data-filter="tea"&gt;Leaves&lt;/li&gt;
-  &lt;li data-filter="coffee"&gt;Powder&lt;/li&gt;
-&lt;/ul&gt;
+<ul id="content">
+  <li data-filter="coffee">Beans</li>
+  <li data-filter="tea">Leaves</li>
+  <li data-filter="coffee">Powder</li>
+</ul>
 ```
 
-## Options
+### Options
 
+
+#### useFilters
 ```
-useFilters
 default: false
 ```
 Whether or not to use category filters
 
+#### filterControls       
 ```
-filterControls       
 default: '#filter-controls'
 ```
-The container including all your filter &lt;input&gt;'s
+The container including all your filter <input>'s
 
+#### defaultFilter:        
 ```
-defaultFilter:        
 default: none
 ```
 The id of the filter that should be focused on pageload
 
+#### selectAll
 ```
-selectAll
 default: 'all'
 ```
 The id of the filter that shows all content
 
+#### usePagination
 ```
-usePagination
 default: true
 ```
 Whether or not to paginate the content
 
+#### pageLimit:
 ```
-pageLimit:
 default: 15
 ```
 The amount of items to show per page
 
+#### pageControls
 ```
-pageControls
 default: '#page-controls'
 ```
 The container for the page controls (i.e., the 'previous', 'next' &amp; numbered controls)
 
+#### previousButtonClass
 ```
-previousButtonClass
 default: 'previous'
 ```
 ...
