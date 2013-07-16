@@ -16,8 +16,8 @@ Here's one way you could call Filterade on your content:
 
 ```js
 $('#content').Filterade({
-  filterControls: '#filter-controls',
   useFilters:     'true',
+  filterControls: '#filter-controls',
   pageLimit:      10
 });
 ```
@@ -99,35 +99,37 @@ The container for the page controls (i.e., the 'previous', 'next' &amp; numbered
 default: '#page-controls'
 ```
 ##### previousButtonClass
+The class to append to the page control's 'previous' button
+```
 default: 'previous'
-...
-
+```
 ##### previousButtonLabel
+The label to append to the page control's 'previous' button
+```
 default: 'Previous'
-
-...
-
+```
 ##### nextButtonClass
+The class to append to the page control's 'next' button
+```
 default: 'next'
-
-...
-
+```
 ##### nextButtonLabel
+The label to append to the page control's 'next' button
+```
 default: 'Next'
-
-...
-
+```
 ##### pagerClass
+The class to append to each numbered button in the page controls
+```
 default: 'page'
-
-...
-
+```
 ##### activeClass
+The class to append to the active button in the page controls
+```
 default: 'active' 
-
-...
-
+```
 ##### log
+Display console messages from Filterade
+```
 default: false
-
-...
+```
