@@ -33,11 +33,11 @@
     pageCount = Math.ceil(nodes.length / options.pageLimit);
     filters = [];
     activeFilter = 0;
+    
     /*
         # @getPageCount
         # Calculate page count
     */
-
     getPageCount = function() {
       var nodeCount;
       if (options.usePagination || defaults.usePagination) {
@@ -54,11 +54,11 @@
         }
       }
     };
+    
     /*
         # @paginateControls
         # Hide/display content based on pagination
     */
-
     paginateControls = function() {
       var i, _i;
       if (options.usePagination || defaults.usePagination) {
@@ -94,11 +94,11 @@
         }
       }
     };
+    
     /*
         # @paginateResults
         # Only displays results within the active page
     */
-
     paginateResults = function() {
       var nodeIndex;
       if (options.usePagination || defaults.usePagination) {
@@ -115,11 +115,11 @@
         });
       }
     };
+    
     /*
         # @filterResults
         # Hide/display content based on the active filter
     */
-
     filterResults = function() {
       nodes.show();
       if (options.useFilters || defaults.useFilters) {
@@ -136,22 +136,22 @@
         }
       }
     };
+    
     /*
         # @updateView
         # Update controls and containers
     */
-
     updateView = function() {
       filterResults();
       getPageCount();
       paginateControls();
       return paginateResults();
     };
+    
     /*
         # @initialize
         # Configures plugin defaults and updates the document when done
     */
-
     initialize = function() {
       if (options.useFilters || defaults.useFilters) {
         filterControls.find('input').each(function(index) {
